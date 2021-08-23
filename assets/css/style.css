@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #757575cc;
+    --secondary-color: #00285c;
+    --tertiary-color: #48e6e6;
+}
+
+/* Start Body Style */
+body {
+    color: var(--tertiary-color);
+    font-family: Helvetica, Arial, sans-serif;
+}
+/* End Body Style */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    background-color: var(--primary-color);
+    background-image: url("../images/flowers.jpg");
+    position: -webkit-sticky;
+    position: sticky;
+  }
+
+header nav {
+    margin: 7px 0;
+    color: var(--secondary-color);
+}
+
+header nav ul {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    padding-right: 0px;
+    color: var(--secondary-color);
+}
+
+header nav ul li {
+    
+    font-size: 1.8vw;
+    padding: 10px 15px;
+    margin-top: 5px;
+    margin-bottom: 10px; 
+    border: 3px solid var(--secondary-color);
+    color: var(--secondary-color);
+    background-color: rgba(8, 0, 114, 0.8);
+}
+
+header nav ul li a:hover {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 15px;
+    text-shadow: none;
+}
+
+header a {
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--tertiary-color);
+    color: var(--tertiary-color);
+  }
+
+
+
+.header-name {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-size: cover;
+    background-position: center;
+    border: 3px solid var(--secondary-color);
+    background-color: rgba(56, 252, 252, 0.8);
+    padding: 10px;
+    color: var(--secondary-color);
+    width: 25%;
+    margin: 3.5%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+  }
+
+.header-name h1 {
+    font-size: 35px;
+    margin: 0;
+}
+
+/* Start Hero Style */
+
+.hero {
+    background-image: url("../images/blurred-back.jpg");
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-position: 80% 10%;
+    display: flex;
+    justify-content: flex-end;
+    height: 350px;
+    background-size: cover;
+    background-attachment: fixed; 
+    align-items: flex-end;
+   
+}
+
+.hero-subtitle h1, h2 {
+    
+    
+    padding-bottom: 20px;
+    padding-right: 20px;
+  
+}
+
+.intro p {
+    line-height: 1.7;
+    color: var(--tertiary-color);
+    width: 80%;
+    font-size: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Intro Style End */
+
+.steps {
+    background: var(--primary-color);
+}
+
+
+.section-title {
+    font-size: 48px;
+    color: var(--secondary-color);
+    padding-top: 50px;
+    border-bottom: 3px solid;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%;
+}
+
+.primary-border {
+    border-color: var(--primary-color);
+}
+
+.secondary-border {
+    border-color: var(--tertiary-color);
+}
+
+.step {
+    margin: 50px auto;
+    padding-bottom: 50px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.step:not(:last-child) {
+    border-bottom: 1px solid var(--tertiary-color);
+}
+
+.step h3 {
+    color: var(--secondary-color);
+    font-size: 46px;
+    flex: 1 30%;
+}
+
+.step-info {
+    flex: 2 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.step-img {
+    flex: 1 12%;
+    margin-right: 20px;
+}
+
+.step-img img {
+    max-width: 100%;
+}
+
+.step-text {
+    flex: 12;
+}
+
+.step-text p {
+    color: var(--tertiary-color);
+    font-size: 18px;
+}
+
+.step-text h4 {
+    font-size: 26px;
+    line-height: 1.5;
+    color: var(--secondary-color);
+}
+
+.float-left {
+    
+    background-image: url("../images/blurred-back.jpg");
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-position: 80% 10%;
+    display: flex;
+    justify-content: flex-end;
+    height: 350px;
+    background-size: cover;
+    background-attachment: fixed; 
+    align-items: flex-end;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+    background-image: url("../images/blurred-back.jpg");
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-position: 80% 10%;
+    display: flex;
+    justify-content: flex-end;
+    height: 350px;
+    background-size: cover;
+    background-attachment: fixed; 
+    align-items: flex-end;
+}
+
+.content {
+    
+    background-image: url("../images/blurred-back.jpg");
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-position: 80% 10%;
+    display: flex;
+    justify-content: flex-end;
+    height: 350px;
+    background-size: cover;
+    background-attachment: fixed; 
+    align-items: flex-end;
+}
+
+
+/* start benefits and services section */
+.benefits {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: var(--secondary-color);
+}
+
+.benefit-lead, .benefit-brand, .benefit-cost, .my-info, .my-resume {
+    margin-bottom: 32px;
+    color: var(--tertiary-color);
+}
+
+.benefit-lead h2, .benefit-brand h2, .benefit-cost h2, .my-info h2, .my-resume h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.benefit-lead img, .benefit-brand img, .benefit-cost img, .my-info img, .my-resume img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+/* end benefits and services section */
+
+.search-engine-optimization, .online-reputation-management, .social-media-marketing {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+    background-image: url("../images/blurred-back.jpg");
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-position: 80% 10%;
+    display: flex;
+    justify-content: flex-end;
+    height: 350px;
+    background-size: cover;
+    background-attachment: fixed; 
+    align-items: flex-end;
+}
+
+.search-engine-optimization img, .online-reputation-management img, .social-media-marketing img {
+    max-height: 200px;
+}
+
+.search-engine-optimization h2, .online-reputation-management h2, .social-media-marketing h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
